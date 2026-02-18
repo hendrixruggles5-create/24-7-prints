@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24/7 Prints | 3D Printed Gadgets</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+background:black;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+border-bottom:1px solid #222;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00ff88;
+}
+
+/* HERO */
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#000,#1c1c1c);
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#00ff88;
+}
+
+.hero p{
+color:#bbb;
+max-width:600px;
+margin:auto;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#00ff88;
+color:black;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#00cc6a;
+transform:scale(1.05);
+}
+
+/* PRODUCTS */
+.products{
+padding:60px 20px;
+text-align:center;
+}
+
+.products h2{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.product-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+width:260px;
+padding:15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+background:#222;
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.price{
+color:#00ff88;
+font-weight:bold;
+margin:8px 0;
+}
+
+/* ABOUT */
+.about{
+padding:50px 20px;
+text-align:center;
+background:#111;
+}
+
+.about p{
+max-width:600px;
+margin:auto;
+color:#ccc;
+}
+
+/* CONTACT */
+.contact{
+padding:50px 20px;
+text-align:center;
+}
+
+.contact p{
+color:#aaa;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+color:#555;
+margin-top:30px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+.product-grid{
+flex-direction:column;
+align-items:center;
+}
+header{
+flex-direction:column;
+gap:10px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<svg width="80" height="35" viewBox="0 0 300 100">
+<polygon points="50,10 80,30 80,70 50,90 20,70 20,30" fill="#00ff88"/>
+<text x="110" y="60" font-size="40" fill="#00ff88" font-weight="bold">24/7</text>
+</svg>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Shop</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Smart <span>Everyday Solutions</span></h1>
+<p>We create practical 3D printed gadgets like phone holders, battery organizers, and useful everyday tools. Printed locally on our Bambu A1 Mini.</p>
+<a href="#products" class="btn">Shop Now</a>
+</section>
+
+<section class="products" id="products">
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/260x180" alt="Phone Stand">
+<h3>Adjustable Phone Stand</h3>
+<div class="price">$14.99</div>
+<p>Strong, lightweight, fits most phones.</p>
+<a href="https://cash.app/$YourCashtag/14.99" class="btn">Pay with Cash App</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/260x180" alt="Battery Holder">
+<h3>AA/AAA Battery Holder</h3>
+<div class="price">$9.99</div>
+<p>Organize your batteries neatly.</p>
+<a href="https://cash.app/$YourCashtag/9.99" class="btn">Pay with Cash App</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/260x180" alt="Cable Organizer">
+<h3>Desk Cable Organizer</h3>
+<div class="price">$7.99</div>
+<p>Keep your desk clean and tidy.</p>
+<a href="https://cash.app/$YourCashtag/7.99" class="btn">Pay with Cash App</a>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About 24/7 Prints</h2>
+<p>24/7 Prints is a small local 3D printing business focused on practical, affordable, everyday solutions. Everything is designed and printed in-house for quality and durability.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Local Pickup Only</h2>
+<p>We currently offer safe public meetup pickup only. After payment, we will contact you to schedule pickup. Parent supervision required for minors.</p>
+</section>
+
+<footer>
+© 2026 24/7 Prints — Printed Locally.
+</footer>
+
+</body>
+</html>
